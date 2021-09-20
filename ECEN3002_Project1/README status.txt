@@ -1,0 +1,3 @@
+I originally submitted this project on 10/8. I did not realize we needed to attach a video and txt about the status of the project, so that is why I am re-submitting on 10/6. NOTHING technical about the project has been modified, and I attached a screenshot of my original Canvas submission.
+
+The current status of my VGA controller project is that I can successfully display two rectangles on the screen, and manipulate their color and position with a hardware switch and push button. In addition to this, the testbench is working properly in ModelSim, and all of correct signals are identfiable on Signal Tap. There are screenshots of ModelSim and Signal Tap in this project directory as well.

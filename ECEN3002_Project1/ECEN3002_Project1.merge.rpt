@@ -1,0 +1,387 @@
+Partition Merge report for ECEN3002_Project1
+Thu Oct 08 23:08:38 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Thu Oct 08 23:08:38 2020           ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Revision Name                   ; ECEN3002_Project1                               ;
+; Top-level Entity Name           ; ECEN3002_Project1                               ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 37                                              ;
+; Total pins                      ; 44                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                               ;
++---------------------------------------------+-----+--------------------------------+
+; Statistic                                   ; Top ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----+--------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 31  ; 0                              ;
+;                                             ;     ;                                ;
+; Combinational ALUT usage for logic          ; 50  ; 0                              ;
+;     -- 7 input functions                    ; 1   ; 0                              ;
+;     -- 6 input functions                    ; 9   ; 0                              ;
+;     -- 5 input functions                    ; 9   ; 0                              ;
+;     -- 4 input functions                    ; 5   ; 0                              ;
+;     -- <=3 input functions                  ; 26  ; 0                              ;
+; Memory ALUT usage                           ; 0   ; 0                              ;
+;     -- 64-address deep                      ; 0   ; 0                              ;
+;     -- 32-address deep                      ; 0   ; 0                              ;
+;                                             ;     ;                                ;
+; Dedicated logic registers                   ; 37  ; 0                              ;
+;                                             ;     ;                                ;
+;                                             ;     ;                                ;
+; I/O pins                                    ; 42  ; 2                              ;
+; I/O registers                               ; 0   ; 0                              ;
+; Total block memory bits                     ; 0   ; 0                              ;
+; Total block memory implementation bits      ; 0   ; 0                              ;
+;                                             ;     ;                                ;
+; Connections                                 ;     ;                                ;
+;     -- Input Connections                    ; 37  ; 0                              ;
+;     -- Registered Input Connections         ; 36  ; 0                              ;
+;     -- Output Connections                   ; 0   ; 37                             ;
+;     -- Registered Output Connections        ; 0   ; 0                              ;
+;                                             ;     ;                                ;
+; Internal Connections                        ;     ;                                ;
+;     -- Total Connections                    ; 361 ; 42                             ;
+;     -- Registered Connections               ; 181 ; 0                              ;
+;                                             ;     ;                                ;
+; External Connections                        ;     ;                                ;
+;     -- Top                                  ; 0   ; 37                             ;
+;     -- hard_block:auto_generated_inst       ; 37  ; 0                              ;
+;                                             ;     ;                                ;
+; Partition Interface                         ;     ;                                ;
+;     -- Input Ports                          ; 15  ; 1                              ;
+;     -- Output Ports                         ; 29  ; 3                              ;
+;     -- Bidir Ports                          ; 0   ; 0                              ;
+;                                             ;     ;                                ;
+; Registered Ports                            ;     ;                                ;
+;     -- Registered Input Ports               ; 0   ; 0                              ;
+;     -- Registered Output Ports              ; 0   ; 0                              ;
+;                                             ;     ;                                ;
+; Port Connectivity                           ;     ;                                ;
+;     -- Input Ports driven by GND            ; 0   ; 0                              ;
+;     -- Output Ports driven by GND           ; 0   ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0   ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0   ; 0                              ;
+;     -- Input Ports with no Source           ; 0   ; 0                              ;
+;     -- Output Ports with no Source          ; 0   ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0   ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0   ; 0                              ;
++---------------------------------------------+-----+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                       ;
++---------------------------+-----------+---------------+----------+-------------+
+; Name                      ; Partition ; Type          ; Location ; Status      ;
++---------------------------+-----------+---------------+----------+-------------+
+; CLOCK2_50                 ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CLOCK2_50          ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CLOCK2_50~input    ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; KEY[0]                    ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[0]             ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[0]~input       ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; KEY[1]                    ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[1]             ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[1]~input       ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; KEY[2]                    ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[2]             ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[2]~input       ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; KEY[3]                    ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[3]             ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[3]~input       ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[0]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[0]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[0]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[1]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[1]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[1]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[2]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[2]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[2]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[3]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[3]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[3]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[4]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[4]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[4]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[5]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[5]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[5]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[6]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[6]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[6]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[7]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[7]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[7]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[8]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[8]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[8]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; SW[9]                     ; Top       ; Input Port    ; n/a      ;             ;
+;     -- SW[9]              ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- SW[9]~input        ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_BLANK_N               ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_BLANK_N        ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_BLANK_N~output ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[0]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[0]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[0]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[1]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[1]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[1]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[2]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[2]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[2]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[3]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[3]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[3]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[4]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[4]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[4]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[5]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[5]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[5]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[6]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[6]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[6]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_B[7]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_B[7]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_B[7]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_CLK                   ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_CLK            ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_CLK~output     ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[0]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[0]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[0]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[1]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[1]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[1]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[2]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[2]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[2]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[3]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[3]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[3]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[4]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[4]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[4]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[5]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[5]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[5]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[6]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[6]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[6]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_G[7]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_G[7]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_G[7]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_HS                    ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_HS             ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_HS~output      ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[0]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[0]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[0]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[1]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[1]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[1]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[2]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[2]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[2]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[3]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[3]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[3]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[4]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[4]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[4]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[5]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[5]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[5]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[6]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[6]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[6]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_R[7]                  ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_R[7]           ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_R[7]~output    ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_SYNC_N                ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_SYNC_N         ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_SYNC_N~output  ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
+; VGA_VS                    ; Top       ; Output Port   ; n/a      ;             ;
+;     -- VGA_VS             ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- VGA_VS~output      ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                           ;           ;               ;          ;             ;
++---------------------------+-----------+---------------+----------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                                                                           ;
++---------------------------------------------+------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                              ;
++---------------------------------------------+------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 31                                                                                 ;
+;                                             ;                                                                                    ;
+; Combinational ALUT usage for logic          ; 50                                                                                 ;
+;     -- 7 input functions                    ; 1                                                                                  ;
+;     -- 6 input functions                    ; 9                                                                                  ;
+;     -- 5 input functions                    ; 9                                                                                  ;
+;     -- 4 input functions                    ; 5                                                                                  ;
+;     -- <=3 input functions                  ; 26                                                                                 ;
+;                                             ;                                                                                    ;
+; Dedicated logic registers                   ; 37                                                                                 ;
+;                                             ;                                                                                    ;
+; I/O pins                                    ; 44                                                                                 ;
+;                                             ;                                                                                    ;
+; Total DSP Blocks                            ; 0                                                                                  ;
+;                                             ;                                                                                    ;
+; Total PLLs                                  ; 1                                                                                  ;
+;     -- PLLs                                 ; 1                                                                                  ;
+;                                             ;                                                                                    ;
+; Maximum fan-out node                        ; video_pll:VP0|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
+; Maximum fan-out                             ; 39                                                                                 ;
+; Total fan-out                               ; 366                                                                                ;
+; Average fan-out                             ; 2.08                                                                               ;
++---------------------------------------------+------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+    Info: Processing started: Thu Oct 08 23:08:37 2020
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off ECEN3002_Project1 -c ECEN3002_Project1 --merge=on
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus Prime software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35002): Resolved and merged 1 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning: RST port on the PLL is not properly connected on instance video_pll:VP0|video_pll_0002:video_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+    Info: Must be connected
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 12
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 12
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/adamp/Desktop/Randy_ECEN3002_Project1_restored/ECEN3002_Project1.v Line: 15
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 64 logic cells
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Partition Merge was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Thu Oct 08 23:08:38 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

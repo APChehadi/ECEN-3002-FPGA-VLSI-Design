@@ -1,0 +1,57 @@
+# Reading pref.tcl
+# do DE10_Standard_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/adamp/OneDrive\ -\ UCB-O365/ECEN\ 3002/ECEN3002_Project1 {C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/de10_standard.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:30 on Oct 08,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1" C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/de10_standard.v 
+# -- Compiling module DE10_Standard
+# 
+# Top level modules:
+# 	DE10_Standard
+# End time: 10:28:30 on Oct 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/adamp/OneDrive\ -\ UCB-O365/ECEN\ 3002/ECEN3002_Project1 {C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/TB_ECEN3002_Project1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:30 on Oct 08,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1" C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/TB_ECEN3002_Project1.v 
+# -- Compiling module TB_ECEN3002_Project1
+# 
+# Top level modules:
+# 	TB_ECEN3002_Project1
+# End time: 10:28:30 on Oct 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TB_ECEN3002_Project1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TB_ECEN3002_Project1 
+# Start time: 10:28:30 on Oct 08,2020
+# Loading work.TB_ECEN3002_Project1
+# ** Error: (vsim-3033) Instantiation of 'ECEN3002_Project1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_ECEN3002_Project1 File: C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/TB_ECEN3002_Project1.v Line: 10
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/simulation/modelsim/rtl_work
+#             C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Project1/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./DE10_Standard_run_msim_rtl_verilog.do PAUSED at line 12
+# End time: 10:31:52 on Oct 08,2020, Elapsed time: 0:03:22
+# Errors: 1, Warnings: 0

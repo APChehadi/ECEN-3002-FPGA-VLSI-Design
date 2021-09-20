@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at PG.v(28): always construct contains both blocking and non-blocking assignments File: C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Lab8/PG.v Line: 28
+Warning (10268): Verilog HDL information at PG.v(53): always construct contains both blocking and non-blocking assignments File: C:/Users/adamp/OneDrive - UCB-O365/ECEN 3002/ECEN3002_Lab8/PG.v Line: 53
